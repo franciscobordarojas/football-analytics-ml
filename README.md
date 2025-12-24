@@ -61,9 +61,10 @@ Criterios de limpieza:
 ### Tecnologías utilizadas
 - Python
 - Pandas, Numpy
-- Matplotlib, Seaborn
-- Scikit-learn
+- Seaborn
+- Scikit-learn (PCA, KMeans, DBSCAN, KNN; preprocessing, model_selection, metrics)
 - Jupyter Notebook
+- Keras
 
 #### Autor
 Francisco Bordaro Rojas
