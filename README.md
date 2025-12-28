@@ -67,5 +67,5 @@ Recomendación y valuación
 - Keras
 
 #### Autor
-Francisco Bordaro Rojas
+Francisco Borda Rojas
 Estudiante de Licenciatura en Ciencias de Datos – UBA
