@@ -22,29 +22,29 @@ Criterios de limpieza:
 - Selección de variables numéricas relevantes para modelado.
 
 ### Metodología
-1️⃣ Preprocesamiento
+Preprocesamiento
 - Limpieza de datos y manejo de valores faltantes
 - Filtrado por minutos jugados
 - Selección de features numéricas
 - Escalado de variables
 
-2️⃣ Análisis Exploratorio
+Análisis Exploratorio
 - Visualización de distribuciones y relaciones entre variables
 - Comparación de perfiles de jugadores
 
-3️⃣ Clustering
+Clustering
 - Reducción de dimensionalidad con PCA
 - Agrupamiento con K-Means
 - Agrupamiento no supervisado con DBSCAN
 - Análisis e interpretación de clusters obtenidos
 
-4️⃣ Clasificación
+Clasificación
 - Clasificación de posición de juego mediante KNN
 - Selección del hiperparámetro K usando validación
 - Evaluación en conjunto de test
 - Comparación de modelos con y sin PCA
 
-5️⃣ Recomendación y valuación
+Recomendación y valuación
 - Modelo predictivo para estimar el valor de mercado de jugadores
 - Identificación de jugadores sobrevalorados e infravalorados
 - Sistema de recomendación basado en similitud de características
