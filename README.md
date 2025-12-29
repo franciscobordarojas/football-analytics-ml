@@ -1,71 +1,55 @@
- # Football Analytics & Machine Learning
+# Football Analytics & Machine Learning
 
-### Descripción
-- Proyecto de análisis de datos y machine learning aplicado al fútbol profesional.
-- El objetivo es analizar el rendimiento de jugadores, identificar perfiles similares, clasificar posiciones y recomendar jugadores combinando métricas deportivas y valuación de mercado.
-- El proyecto fue desarrollado en el marco de la materia Laboratorio de Datos (Lic. en Ciencias de Datos, UBA).
+Proyecto de análisis de datos y Machine Learning aplicado a fútbol, utilizando estadísticas de rendimiento (FBRef) e información de mercado (Transfermarkt) para clustering, clasificación y recomendación de jugadores.
 
-### Problemas abordados
-- Agrupamiento de jugadores con características similares.
-- Clasificación de la posición de juego a partir de estadísticas.
-- Reducción de dimensionalidad para análisis y visualización.
-- Recomendación de jugadores similares con menor costo.
-- Detección de jugadores sobrevalorados e infravalorados.
+El proyecto se presenta como una pieza de portfolio: el análisis completo se encuentra ejecutado y los resultados pueden visualizarse directamente en la notebook incluida.
 
-### Datos
-- FBRef 2020–21: estadísticas de rendimiento de jugadores profesionales.
-- Transfermarkt 2019–20: valuación de mercado de jugadores.
+---
 
-Criterios de limpieza:
-- Eliminación de jugadores con pocos minutos jugados.
-- Tratamiento de valores faltantes.
-- Selección de variables numéricas relevantes para modelado.
+## Alcance del proyecto
 
-### Metodología
-Preprocesamiento
-- Limpieza de datos y manejo de valores faltantes
-- Filtrado por minutos jugados
-- Selección de features numéricas
-- Escalado de variables
+El análisis abarca el flujo completo de un proyecto de Data Science:
 
-Análisis Exploratorio
-- Visualización de distribuciones y relaciones entre variables
-- Comparación de perfiles de jugadores
-
-Clustering
+- Análisis exploratorio de datos (EDA)
 - Reducción de dimensionalidad con PCA
-- Agrupamiento con K-Means
-- Agrupamiento no supervisado con DBSCAN
-- Análisis e interpretación de clusters obtenidos
+- Clustering de jugadores (K-Means y DBSCAN)
+- Clasificación de posiciones
+- Recomendación de jugadores considerando similitud y costo
+- Estimación de valuación mediante modelos de regresión
 
-Clasificación
-- Clasificación de posición de juego mediante KNN
-- Selección del hiperparámetro K usando validación
-- Evaluación en conjunto de test
-- Comparación de modelos con y sin PCA
+---
 
-Recomendación y valuación
-- Modelo predictivo para estimar el valor de mercado de jugadores
-- Identificación de jugadores sobrevalorados e infravalorados
-- Sistema de recomendación basado en similitud de características
-- Análisis de reemplazos potenciales para jugadores de alto costo
+## Datos
 
-### Resultados principales
-- Identificación de clusters coherentes con roles de juego
-- Buen desempeño en la clasificación de posiciones
-- Detección de jugadores con alta similitud a estrellas pero menor valuación
-- Ejemplos de recomendaciones justificadas mediante métricas y modelo
+- **FBRef**: estadísticas de rendimiento por jugador y temporada.
+- **Transfermarkt**: información de valor de mercado por jugador.
 
-(Los detalles completos pueden encontrarse en el notebook del proyecto)
+Los datasets se integran mediante identificadores o nombres normalizados (según disponibilidad) y se aplican filtros mínimos (por ejemplo, minutos jugados) para evitar observaciones poco representativas.
 
-### Tecnologías utilizadas
+Por cuestiones de licencia y tamaño, los archivos de datos no se incluyen en el repositorio.
+
+---
+
+## Notebook y resultados
+
+La notebook principal del proyecto se encuentra en:
+
+notebooks/Football_Analytics_Portfolio.ipynb
+
+
+Incluye:
+- el código completo del análisis,
+- visualizaciones generadas,
+- métricas de evaluación de los modelos,
+- y conclusiones finales.
+
+El proyecto está pensado para ser leído y evaluado directamente a partir de la notebook, sin necesidad de ejecutar el código.
+
+---
+
+## Tecnologías utilizadas
+
 - Python
-- Pandas, Numpy
+- Pandas, NumPy
+- Scikit-learn
 - Seaborn
-- Scikit-learn (PCA, KMeans, DBSCAN, KNN; preprocessing, model_selection, metrics)
-- Jupyter Notebook
-- Keras
-
-#### Autor
-Francisco Borda Rojas
-Estudiante de Licenciatura en Ciencias de Datos – UBA
